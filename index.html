@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Інформація про країни</title>
+  <style>
+    section {
+        border: 0.5px solid rgb(92, 109, 179);
+        border-radius: 15px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    button {
+        margin: 10px 0;
+        background-color: white;
+    }
+
+    button:hover {
+        background-color: rgb(92, 109, 179);
+        transition: background-color, color 0.5s;
+        color: white;
+    }
+
+    input, button {
+        width: 200px;
+        border: 0.5px solid rgb(92, 109, 179);
+        border-radius: 5px;
+        padding: 5px;
+    }
+  </style>
+</head>
+<body>
+    <section>
+        <h1>Довідник країн</h1>
+        <input type="text" id="country" placeholder="Введіть назву країни">
+        <button onclick="getCountryData()">Пошук</button>
+
+        <div id="result"></div>
+    </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
