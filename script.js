@@ -6,7 +6,7 @@ function getCountryData() {
     return;
   }
 
-  const isCode = /^[A-Za-z]{2,3}$/.test(input); // якщо введено 2–3 літери – це код
+  const isCode = /^[A-Za-z]{2,3}$/.test(input); 
   const endpoint = isCode
     ? `https://restcountries.com/v3.1/alpha/${input}`
     : `https://restcountries.com/v3.1/name/${input}`;
